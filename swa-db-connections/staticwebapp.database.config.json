@@ -39,6 +39,17 @@
           ]
         }
       ]
+    },
+    "discountstructures": {
+      "source": "dbo.DiscountStructure",
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            "*"
+          ]
+        }
+      ]
     }
   }
 }
