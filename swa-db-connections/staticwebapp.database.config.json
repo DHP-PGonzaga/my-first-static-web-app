@@ -38,10 +38,27 @@
             "*"
           ]
         }
-      ]
+      ],
+      "relationships": {
+        "DealTemplateRestrictions": {
+          "cardinality": "many",
+          "target.entity": "DealTemplateRestrictions"
+        }
+      }
     },
     "discountstructures": {
       "source": "dbo.DiscountStructure",
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            "*"
+          ]
+        }
+      ]
+    },
+    "DealTemplateRestrictions": {
+      "source": "dbo.DealTemplateRestrictions",
       "permissions": [
         {
           "role": "anonymous",
