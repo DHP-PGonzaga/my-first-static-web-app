@@ -50,6 +50,29 @@
           ]
         }
       ]
+    },
+    "templaterestrictions": {
+      "source": "dbo.DealTemplateRestrictions",
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            "*"
+          ]
+        }
+      ],
+      "relationships": {
+        "dealtemplates": {
+          "cardinality": "many",
+          "target.entity": "dealtemplates",
+          "source.fields": [
+            "DealType"
+          ],
+          "target.fields": [
+            "TemplateRestrictions"
+          ]
+        }
+      }
     }
   }
 }
